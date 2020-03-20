@@ -1,0 +1,52 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js --ext js,graphql --exec babel-node",
+    "test": "jest test",
+    "lint": "eslint src"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run lint && npm test"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HugoRoca/cms.graphql.apollo.nextjs.reacthooks.contextapi.suspense.postgresql.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HugoRoca/cms.graphql.apollo.nextjs.reacthooks.contextapi.suspense.postgresql/issues"
+  },
+  "homepage": "https://github.com/HugoRoca/cms.graphql.apollo.nextjs.reacthooks.contextapi.suspense.postgresql#readme",
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/node": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "apollo-server": "^2.10.1",
+    "babel-eslint": "^10.1.0",
+    "cross-env": "^7.0.2",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.19.0",
+    "graphql": "^14.6.0",
+    "husky": "^4.2.3",
+    "jest": "^25.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "merge-graphql-schemas": "^1.7.6",
+    "pg": "^7.18.2",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.21.5",
+    "sequelize-mock": "^0.10.2"
+  }
+}
