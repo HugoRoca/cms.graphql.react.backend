@@ -1,5 +1,5 @@
 import user from '../../../src/graphql/resolvers/user'
-import { isFunction } from '../../../src/utils/is'
+import { isFunction } from 'fogg-utils'
 
 describe('#Query', () => {
   it('should have getUsers method', async () => {

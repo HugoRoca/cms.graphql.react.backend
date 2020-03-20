@@ -3,11 +3,10 @@ import jwt from 'jsonwebtoken'
 import { AuthenticationError } from 'apollo-server'
 
 // utils
-import { encrypt, setBase64 } from './security'
+import { encrypt, setBase64, isPasswordMatch } from 'fogg-utils'
 
 // configuration
 import { $security } from '../../config'
-import { isPasswordMatch } from './is'
 
 export const createToken = async user => {
   const { id, username, password, email, privilege, active } = user

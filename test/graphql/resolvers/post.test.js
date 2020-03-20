@@ -1,5 +1,5 @@
 import post from '../../../src/graphql/resolvers/post'
-import { isFunction } from '../../../src/utils/is'
+import { isFunction } from 'fogg-utils'
 
 describe('#Query', () => {
   it('should have getPosts method', async () => {
